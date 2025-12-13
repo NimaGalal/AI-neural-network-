@@ -13,7 +13,7 @@ def softmax(Z):
 def forward_propagation(X,parameters,activation_type="relu"):
     caches =[]
     A =X
-    L =len(parameters) 
+    L =len(parameters) //2
     
     for l in range(1,L):
         Input_From_Previous_layer = A
